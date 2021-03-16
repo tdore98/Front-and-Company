@@ -10,9 +10,45 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/center-line.css">
 </head>
 
 <body>
+    <nav id="mobile-nav" class="mobile-container">
+        <div id="mobile-nav-container">
+            <div class="mobile-nav-item">
+                <img id="close" src="img/close.svg" alt="Close Button">
+            </div>
+            <div class="mobile-nav-item">
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#shop">
+                    <h2>Shop</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#consignment">
+                    <h2>Consignment</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#ourstory">
+                    <h2>Our Story</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#contact">
+                    <h2>Contact Us</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="centering">
+        <div class="center-line"></div>
+    </div> -->
     <section id="landing">
         <div class="left-bg"></div>
         <div class="landing-container">
@@ -51,154 +87,163 @@
 
     <nav id="main-nav-container">
         <div id="main-nav">
-            <a href="#shop">Shop</a>
-            <a href="#consignment">Consignment</a>
-            <a href="index.html">
+            <img id="hamburger" src="img/hamburger.svg" alt="Mobile Menu Button">
+            <a class="main-nav-item" href="#shop">Shop</a>
+            <a class="main-nav-item" href="#consignment">Consignment</a>
+            <a class="main-nav-logo" href="index.html">
                 <img src="img/logo.png" alt="Front and Company logo">
             </a>
-            <a href="#ourstory">Our Story</a>
-            <a href="#contact">Contact Us</a>
+            <a class="main-nav-item" href="#ourstory">Our Story</a>
+            <a class="main-nav-item" href="#contact">Contact Us</a>
         </div>
     </nav>
 
     <section id="content">
-        <div id="shop" class="large-card">
-            <h1 class="active dash">Shop</h1>
-            <div class="card-content">
-                <div class="flex-box">
-                    <div class="card">
-                        <img src="img/hanger.svg" alt="Clothes Hanger">
-                        <p class="small-card-text">new clothing & accesories</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/hanger.svg" alt="Clothes Hanger">
-                        <p class="small-card-text">consignment pieces</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/hanger.svg" alt="Clothes Hanger">
-                        <p class="small-card-text">gift & <br> home accessories</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="consignment" class="large-card">
-            <h1 class="active dash">Consignment</h1>
-            <div class="card-content">
-                <div class="flex-box">
-                    <div class="card">
-                        <img src="img/hanger.svg" alt="Clothes Hanger">
-                        <p class="small-card-text">book an appointment</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/hanger.svg" alt="Clothes Hanger">
-                        <p class="small-card-text">consignment contract</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="img/hanger.svg" alt="Clothes Hanger">
-                        <p class="small-card-text">frequently asked questions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="ourstory" class="large-card">
-            <h1 class="active dash">Our Story</h1>
-            <div class="card-content">
-                <div class="text-wrapper">
-                    <p>
-                        Rhoncus, et quis volutpat leo mauris enim sagittis facilisis pulvinar. Vulputate pharetra tincidunt orci habitant diam nibh sed. Enim scelerisque rhoncus eget enim. Nunc eget sit amet, mattis. Interdum rhoncus quam augue amet viverra. Parturient ut vestibulum,
-                        nunc sit ac sed vel. Cursus donec lacus pharetra semper. Aliquam vestibulum ipsum diam sapien tempor, mauris arcu. Molestie ultrices suscipit mattis. Parturient ut vestibulum, nunc sit ac sed vel.
-                    </p>
-
-                    <a class="btn" href="#">learn more</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact" class="large-card">
-            <h1 class="active dash">Contact Us</h1>
-            <div class="card-content">
-                <div class="location-wrapper">
-                    <h2>Locations</h2>
+        <div id="shop" class="large-card-wrapper">
+            <div class="large-card">
+                <h1 class="active dash">Shop</h1>
+                <div class="card-content">
                     <div class="flex-box">
-                        <div class="address">
-                            <h3>Clothing Store</h3>
-                            <h4>3772 Main St.</h4>
-                            <h4>Vancouver, BC,</h4>
-                            <h4>V5V 3N7</h4>
+                        <div class="card">
+                            <img src="img/hanger.svg" alt="Clothes Hanger">
+                            <p class="small-card-text">new clothing & accesories</p>
                         </div>
-                        <div class="address">
-                            <h3>Gift Store</h3>
-                            <h4>3740 Main St.</h4>
-                            <h4>Vancouver, BC,</h4>
-                            <h4>V5V 3N7</h4>
+
+                        <div class="card">
+                            <img src="img/hanger.svg" alt="Clothes Hanger">
+                            <p class="small-card-text">consignment pieces</p>
                         </div>
-                        <div class="address">
-                            <h3>Consignment & <br> Pop-up Shop</h3>
-                            <h4>3742 - 3746 Main St.</h4>
-                            <h4>Vancouver, BC,</h4>
-                            <h4>V5V 3N7</h4>
+
+                        <div class="card">
+                            <img src="img/hanger.svg" alt="Clothes Hanger">
+                            <p class="small-card-text">gift & <br class="break"> home accessories</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="hours-wrapper">
-                    <h2>Store Hours</h2>
+        <div id="consignment" class="large-card-wrapper">
+            <div class="large-card">
+                <h1 class="active dash">Consignment</h1>
+                <div class="card-content">
+                    <div class="flex-box">
+                        <div class="card">
+                            <img src="img/hanger.svg" alt="Clothes Hanger">
+                            <p class="small-card-text">book an appointment</p>
+                        </div>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col">
-                                    <h4>Sun - Wed</h4>
-                                </th>
-                                <th scope="col">
-                                    <h4>Thurs - Sat</h4>
-                                </th>
-                            </tr>
-                        </thead>
+                        <div class="card">
+                            <img src="img/hanger.svg" alt="Clothes Hanger">
+                            <p class="small-card-text">consignment contract</p>
+                        </div>
 
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h4>Gifts & Clothing Store</h4>
-                                </td>
-                                <td>
-                                    <h4>11AM - 5:30PM</h4>
-                                </td>
-                                <td>
-                                    <h4>11AM - 6:30PM</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4>Consignment Department</h4>
-                                </td>
-                                <td>
-                                    <h4>11AM - 5:30PM</h4>
-                                </td>
-                                <td>
-                                    <h4>11AM - 6PM</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4>Pop-up Shop</h4>
-                                </td>
-                                <td>
-                                    <h4>11AM - 5:30PM</h4>
-                                </td>
-                                <td>
-                                    <h4>11AM - 6:30PM</h4>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="card">
+                            <img src="img/hanger.svg" alt="Clothes Hanger">
+                            <p class="small-card-text">frequently asked questions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourstory" class="large-card-wrapper">
+            <div class="large-card">
+                <h1 class="active dash">Our Story</h1>
+                <div class="card-content">
+                    <div class="text-wrapper">
+                        <p>
+                            Rhoncus, et quis volutpat leo mauris enim sagittis facilisis pulvinar. Vulputate pharetra tincidunt orci habitant diam nibh sed. Enim scelerisque rhoncus eget enim. Nunc eget sit amet, mattis. Interdum rhoncus quam augue amet viverra. Parturient ut vestibulum,
+                            nunc sit ac sed vel. Cursus donec lacus pharetra semper. Aliquam vestibulum ipsum diam sapien tempor, mauris arcu. Molestie ultrices suscipit mattis. Parturient ut vestibulum, nunc sit ac sed vel.
+                        </p>
+
+                        <a class="btn" href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="large-card-wrapper">
+            <div class="large-card">
+                <h1 class="active dash">Contact Us</h1>
+                <div class="card-content">
+                    <div class="location-wrapper">
+                        <h2>Locations</h2>
+                        <div class="flex-box">
+                            <div class="address">
+                                <h3>Clothing Store</h3>
+                                <h4>3772 Main St.</h4>
+                                <h4>Vancouver, BC,</h4>
+                                <h4>V5V 3N7</h4>
+                            </div>
+                            <div class="address">
+                                <h3>Gift Store</h3>
+                                <h4>3740 Main St.</h4>
+                                <h4>Vancouver, BC,</h4>
+                                <h4>V5V 3N7</h4>
+                            </div>
+                            <div class="address">
+                                <h3>Consignment & <br> Pop-up Shop</h3>
+                                <h4>3742 - 3746 Main St.</h4>
+                                <h4>Vancouver, BC,</h4>
+                                <h4>V5V 3N7</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hours-wrapper">
+                        <h2>Store Hours</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">
+                                        <h4>Sun - Wed</h4>
+                                    </th>
+                                    <th scope="col">
+                                        <h4>Thurs - Sat</h4>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h4>Gifts & Clothing Store</h4>
+                                    </td>
+                                    <td>
+                                        <h4>11AM - 5:30PM</h4>
+                                    </td>
+                                    <td>
+                                        <h4>11AM - 6:30PM</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Consignment Department</h4>
+                                    </td>
+                                    <td>
+                                        <h4>11AM - 5:30PM</h4>
+                                    </td>
+                                    <td>
+                                        <h4>11AM - 6PM</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Pop-up Shop</h4>
+                                    </td>
+                                    <td>
+                                        <h4>11AM - 5:30PM</h4>
+                                    </td>
+                                    <td>
+                                        <h4>11AM - 6:30PM</h4>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

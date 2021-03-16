@@ -1,0 +1,10 @@
+.center-line {
+    border-left: solid 1px black;
+    height: 100vh;
+}
+
+.centering {
+    width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -8,5 +8,5 @@
     --hoverState: #B7B7A4;
     --shadowDark: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     --shadowLight: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    --transitionDuration: 0.35s;
+    --transitionDuration: 0.3s;
 }

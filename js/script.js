@@ -1,3 +1,8 @@
+function hideMainNav() {
+    document.getElementById("main-nav-container").style.top = "-91px";
+    document.getElementById("main-nav-container").style.boxShadow = "none";
+}
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -15,8 +20,7 @@ window.onscroll = function() {
 
     // if scroll down has occure hide nav and disable shadow
     else {
-        document.getElementById("main-nav-container").style.top = "-91px";
-        document.getElementById("main-nav-container").style.boxShadow = "none";
+        hideMainNav();
     }
     prevScrollpos = currentScrollPos;
 }
@@ -55,4 +59,30 @@ function showLargeCard(x) {
     var cardContent = $(x).children('.card-content'); // change this to ".card-content"
 
     $(cardContent).css('display', 'block');
+}
+
+function showMenu() {
+    var mobileNav = document.getElementById("mobile-nav");
+
+    mobileNav.style.left = "0";
+
+    $('body').addClass('stop-scrolling');
+}
+
+function closeMenu() {
+    var mobileNav = document.getElementById("mobile-nav");
+
+    mobileNav.style.left = "-100vw";
+
+    $('body').removeClass('stop-scrolling');
+
+    hideMainNav();
+}
+
+document.getElementById("hamburger").addEventListener('click', showMenu);
+document.getElementById('close').addEventListener('click', closeMenu);
+
+var mobileNavItem = document.getElementsByClassName('mobile-nav-item');
+for (var i = 0; i < mobileNavItem.length; i++) {
+    mobileNavItem[i].addEventListener('click', closeMenu);
 }
