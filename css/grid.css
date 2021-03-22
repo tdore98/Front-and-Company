@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #292F36;
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 23% 0 0;
+    background: #FF6B6B;
+    margin-bottom: 2em;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.card-detail {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-project-title {
+    margin-bottom: 0.25em;
+}
+
+.card-project-blurb {
+    margin-bottom: 1em;
+}
+
+.card-detail .btn {
+    margin-top: 1.25em;
+}
