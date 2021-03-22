@@ -50,3 +50,15 @@
 .card-detail .btn {
     margin-top: 1.25em;
 }
+
+@media only screen and (max-width: 768px) {
+    .card {
+        flex: 48% 0 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card {
+        flex: 100% 0 0;
+    }
+}

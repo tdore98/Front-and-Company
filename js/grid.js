@@ -14,4 +14,10 @@ function cardHeight() {
     }
 }
 
+function updateCards() {
+    location.reload();
+    cardHeight();
+}
+
 window.addEventListener('DOMContentLoaded', cardHeight);
+window.onresize = updateCards;
