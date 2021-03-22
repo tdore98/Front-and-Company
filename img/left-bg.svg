@@ -1,20 +1,20 @@
-<svg width="1315" height="1055" viewBox="0 0 1315 1055" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1316" height="1055" viewBox="0 0 1316 1055" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_df)">
-<path d="M1311 -17H9.37864L0 1054H999.495L1311 -17Z" fill="#80947C"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="-17" width="1311" height="1071">
-<path d="M1311 -17H9.37864L0 1054H999.495L1311 -17Z" fill="#ACBCA8"/>
+<path d="M1311 -17H0V1054H999.495L1311 -17Z" fill="#80947C"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-76" y="-17" width="1388" height="1071">
+<path d="M1312 -17H-76V1054H1000L1312 -17Z" fill="#ACBCA8"/>
 </mask>
 <g mask="url(#mask0)">
 <g style="mix-blend-mode:overlay" opacity="0.5">
-<rect x="3.75293" y="1268.39" width="1545.38" height="1329.76" transform="rotate(-90 3.75293 1268.39)" fill="url(#pattern0)"/>
+<rect x="-28" y="1268" width="1545" height="1362" transform="rotate(-90 -28 1268)" fill="url(#pattern0)"/>
 </g>
 <g style="mix-blend-mode:overlay">
-<rect x="-85.6262" y="-37.3723" width="1376.05" height="1067.12" fill="url(#pattern1)"/>
+<rect x="-115.626" y="-37.3723" width="1376.05" height="1067.12" fill="url(#pattern1)"/>
 </g>
 </g>
 </g>
 <defs>
-<filter id="filter0_df" x="-4" y="-25" width="1319" height="1080" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_df" x="-80" y="-25" width="1396" height="1080" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="-4"/>
@@ -25,7 +25,7 @@
 <feGaussianBlur stdDeviation="0.5" result="effect2_foregroundBlur"/>
 </filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="translate(-0.14464) scale(0.000955023 0.00110988)"/>
+<use xlink:href="#image0" transform="translate(-0.160431) scale(0.000978417 0.00110988)"/>
 </pattern>
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image1" transform="translate(0 -0.14475) scale(0.000909091 0.00117227)"/>
