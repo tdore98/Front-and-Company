@@ -415,7 +415,8 @@ section {
     opacity: 0.7;
 }
 
-.location-wrapper {
+.location-wrapper,
+.hours-wrapper {
     margin-bottom: 2em;
 }
 
@@ -433,36 +434,80 @@ section {
     text-transform: none;
 }
 
-table {
+.hours-wrapper table {
     border-collapse: collapse;
+    width: 100%;
 }
 
-tbody tr td {
+.hours-wrapper tbody tr td {
     padding: 1em;
 }
 
-th {
+.hours-wrapper th {
     text-align: left;
     padding: 0.25em 1em;
     border-bottom: 2px solid black;
 }
 
-th:first-child {
+.hours-wrapper th:first-child {
     border-right: 2px solid black;
 }
 
-tbody tr td:first-child {
+.hours-wrapper tbody tr td:first-child {
     padding: 0.25em 1em;
     padding-left: 0.75em;
     border-right: 2px solid black;
+}
+
+.hours-wrapper tbody tr td:last-child,
+.hours-wrapper th:last-child {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .table-header {
     border-bottom: 2px solid black;
 }
 
-tbody tr:hover {
+
+/* .hours-wrapper tbody tr:hover {
     background: var(--hoverState);
+} */
+
+.email-directory-wrapper table {
+    width: auto;
+}
+
+.email-directory-wrapper td a {
+    color: var(--hoverState);
+    text-decoration: none;
+}
+
+.email-directory-wrapper td a:hover {
+    text-decoration: underline;
+}
+
+.email-directory-wrapper th,
+.email-directory-wrapper td {
+    padding-bottom: 1em;
+    padding-right: 0.5em;
+}
+
+.email-directory-wrapper th {
+    text-align: left;
+    font-size: 1.2em;
+    padding-right: 3em;
+}
+
+footer {
+    width: 100%;
+    padding: 2em;
+    background: var(--sCardBackground);
+    margin-top: 2em;
+}
+
+footer h4 {
+    text-align: center;
 }
 
 @media only screen and (max-width: 1530px) {
@@ -575,6 +620,21 @@ tbody tr:hover {
     }
     .break {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .email-directory-wrapper th {
+        padding: 0;
+        padding-bottom: 0.25em;
+    }
+    .email-directory-wrapper td {
+        padding-bottom: 1.5em;
+    }
+    .email-directory-wrapper th,
+    .email-directory-wrapper td {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 

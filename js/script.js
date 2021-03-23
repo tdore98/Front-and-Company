@@ -28,8 +28,14 @@ window.onscroll = function() {
 $(document).ready(function() {
     $(".large-card").click(function() {
         toggleLargeCard(this);
-    })
-})
+    });
+
+    // add capability to click on nav then it will open the tab; if closed
+    $(".main-nav-item").click(function(event) {
+        console.log(event.target.innerHTML);
+        showCard(event.target.innerHTML);
+    });
+});
 
 function toggleLargeCard(x) {
     var card = x;
@@ -44,7 +50,39 @@ function toggleLargeCard(x) {
         cardContent[0].style.marginBottom = "0.5em";
         cardContent[0].classList.add('active', 'dash');
     }
+}
 
+function showCard(x) {
+    var card = x;
+
+    switch (x.trim()) {
+        case "Shop":
+            console.log("shop");
+            card = document.getElementById('shop');
+            break;
+        case "Consignment":
+            console.log("consignment");
+            card = document.getElementById('consignment');
+            break;
+        case "Our Story":
+            console.log("our story");
+            card = document.getElementById('ourstory');
+            break;
+        case "Contact Us":
+            console.log("contact us");
+            card = document.getElementById('contact');
+            break;
+        default:
+            console.log("null");
+    }
+
+    var cardContent = card.children;
+
+    cardContent[1].style.display = "block";
+    cardContent[0].style.marginBottom = "0.5em";
+    cardContent[0].classList.add('active', 'dash');
+
+    console.log('works');
 }
 
 function hideLargeCard(x) {
