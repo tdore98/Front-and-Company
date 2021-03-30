@@ -531,7 +531,7 @@ footer {
 }
 
 .back-to-top-container {
-    display: block;
+    display: none;
     position: fixed;
     right: 2.5%;
     bottom: 2.5%;
