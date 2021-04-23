@@ -7,16 +7,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page | Front & Company</title>
 
+    <link rel="stylesheet" href="css/variables2.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#">
-            <img src="img/logo-concept.png" alt="Front & Company logo">
+    <nav id="main-nav">
+        <a class="main-nav-item" href="#">
+            <img class="main-nav-icon" src="img/logo-concept.png" alt="Front & Company logo">
         </a>
+
+        <a class="main-nav-item" target="_blank" href="https://www.clothing.frontandcompany.ca/pages/faq">CONSIGNMENT</a>
+
+        <a class="main-nav-item" target="_blank" href="https://www.clothing.frontandcompany.ca">CLOTHING</a>
+
+        <a class="main-nav-item" target="_blank" href="https://gifts.frontandcompany.ca/">GIFTS</a>
     </nav>
 
+    <section id="banner" class="flexbox row">
+        <div class="flex-70">
+            <div class="landing-text">
+                <h1 class="landing-h1">FRONT &</h1>
+                <h1 class="landing-h1">COMPANY</h1>
+            </div>
+
+            <img class="lower-img" src="img/gift-store-img.jpg" alt="Gift Store">
+        </div>
+
+        <div class="flex-30">
+            <img class="upper-img" src="img/clothing-store-img.jpg" alt="Clothing Store">
+        </div>
+    </section>
+
+    <section id="card-container">
+        <div class="card">
+            <h2 class="card-header">CONSIGNMENT</h2>
+            <div class="card-content">
+                <div class="card-column">
+                    <div class="contact-info">
+                        <h4><b>T: </b> (604) 879 8431</h4>
+                        <h4><b>E: </b> consignment@frontandcompany.com</h4>
+                    </div>
+
+                    <div class="contact-location">
+                        <h3>LOCATION</h3>
+                        <h4>3742 Main St.</h4>
+                        <h4>Vancouver, BC.</h4>
+                        <h4>V5V 3N7</h4>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <h3>DEPARTMENT HOURS</h3>
+                    <div class="hours">
+                        <h4>Monday - Wednesday</h4>
+                        <h4>11:00AM - 5:30PM</h4>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Thursday - Sunday</h4>
+                        <h4>11:00AM - 6:00PM</h4>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Statutory Holidays</h4>
+                        <h4>12:00PM - 6:30PM</h4>
+                    </div>
+
+                </div>
+
+                <div class="card-column">
+                    <div class="btn-wrapper">
+                        <button class="btn">BOOK AN APPOINTMENT</button>
+                        <button class="btn">VISIT SITE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-header">CLOTHING</h2>
+            <div class="card-content">
+                <div class="card-column">
+                    <div class="contact-info">
+                        <h4><b>T: </b> (604) 879 8431</h4>
+                        <h4><b>E: </b> shopping@frontandcompany.ca</h4>
+                    </div>
+
+                    <div class="contact-location">
+                        <h3>LOCATION</h3>
+                        <h4>3772 Main St.</h4>
+                        <h4>Vancouver, BC.</h4>
+                        <h4>V5V 3N7</h4>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <h3>STORE HOURS</h3>
+                    <div class="hours">
+                        <h4>Monday - Wednesday</h4>
+                        <h4>11:00AM - 5:30PM</h4>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Thursday - Sunday</h4>
+                        <h4>11:00AM - 6:30PM</h4>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Statutory Holidays</h4>
+                        <h4>12:00PM - 6:30PM</h4>
+                    </div>
+
+                </div>
+
+                <div class="card-column">
+                    <div class="btn-wrapper">
+                        <button class="btn">VISIT SITE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-header">GIFTS</h2>
+            <div class="card-content">
+                <div class="card-column">
+                    <div class="contact-info">
+                        <h4><b>T: </b> (604) 879 8431</h4>
+                        <h4><b>E: </b> shopping@frontandcompany.ca</h4>
+                    </div>
+
+                    <div class="contact-location">
+                        <h3>LOCATION</h3>
+                        <h4>3740 Main St.</h4>
+                        <h4>Vancouver, BC.</h4>
+                        <h4>V5V 3N7</h4>
+                    </div>
+                </div>
+
+                <div class="card-column">
+                    <h3>DEPARTMENT HOURS</h3>
+                    <div class="hours">
+                        <h4>Monday - Wednesday</h4>
+                        <h4>11:00AM - 5:30PM</h4>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Thursday - Sunday</h4>
+                        <h4>11:00AM - 6:30PM</h4>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Statutory Holidays</h4>
+                        <h4>12:00PM - 6:30PM</h4>
+                    </div>
+
+                </div>
+
+                <div class="card-column">
+                    <div class="btn-wrapper">
+                        <button class="btn">BOOK AN APPOINTMENT</button>
+                        <button class="btn">VISIT SITE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/toggleCards.js"></script>
 </body>
 
 </html>
