@@ -78,6 +78,16 @@ image {
     width: 30%;
 }
 
+.flex-40 {
+    flex: 0 0 40%;
+    width: 40%;
+}
+
+.flex-60 {
+    flex: 0 0 60%;
+    width: 60%;
+}
+
 .flex-70 {
     margin-top: 14em;
     flex: 0 0 70%;
@@ -116,9 +126,9 @@ image {
     background: white;
     border-radius: 15px;
     padding: 2em 2.75em;
-    /* box-shadow: 0 10px 15px 0px #ccc; */
-    box-shadow: 0 0 0 0 rgb(125, 125, 125, 0.7);
-    animation: pulse-card 2s infinite;
+    box-shadow: 0 10px 15px 0px #ccc;
+    /* box-shadow: 0 0 0 0 rgb(125, 125, 125, 0.7); */
+    /* animation: pulse-card 2s infinite; */
     margin-bottom: 4em;
 }
 
@@ -222,10 +232,20 @@ image {
     color: var(--black);
     background: var(--green);
     border: none;
-    border-radius: 5px;
-    /* font-weight: bold; */
+    max-width: 10em;
     font-size: 1.1em;
     text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.btn-wrapper {
+    display: block;
+}
+
+.consignment-appointment .btn-wrapper {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .icon-down-arrow {
@@ -245,4 +265,26 @@ image {
 .card-column .btn-wrapper .btn:first-child {
     display: block;
     margin-bottom: 1em;
+}
+
+.consignment-appointment {
+    margin: 4em;
+}
+
+.breadcrumb {
+    margin-bottom: 2em;
+}
+
+.breadcrumb p {
+    display: inline-block;
+}
+
+.appointment-details h4,
+p,
+ul {
+    padding-bottom: 1em;
+}
+
+.appointment-details ul {
+    padding-left: 1.25em;
 }
