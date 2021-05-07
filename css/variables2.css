@@ -1,4 +1,6 @@
 :root {
     --black: #242124;
     --green: #ACBCA8;
+    --yellow: #F6F2E4;
+    --transitionDuration: 20ms;
 }
