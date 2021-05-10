@@ -11,12 +11,53 @@
 
     <link rel="stylesheet" href="css/variables2.css">
     <link rel="stylesheet" href="css/style2.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/aon5yho.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/fonts2.css">
 </head>
 
 <body>
+    <nav id="mobile-nav" class="mobile-nav" hidden>
+        <div id="mobile-nav-container">
+            <div class="mobile-nav-item">
+                <img id="close" src="img/close.svg" alt="Close Button">
+            </div>
+            <div class="mobile-nav-item">
+                <a href="index2.html">
+                    <h2>HOME</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#consignment">
+                    <h2>CONSIGNMENT</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#clothing">
+                    <h2>CLOTHING</h2>
+                </a>
+            </div>
+
+            <div class="mobile-nav-item">
+                <a href="#GIFTS">
+                    <h2>GIFTS</h2>
+                </a>
+            </div>
+            <div class="mobile-nav-item">
+                <a href="#contact">
+                    <h2>CONTACT US</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <section class="landing">
         <nav id="main-nav">
-            <a class="main-nav-item" href="#">
+            <a id="front-logo" class="main-nav-item" href="#">
                 <img class="main-nav-icon" src="img/logo-concept.png" alt="Front & Company logo">
             </a>
 
@@ -25,6 +66,10 @@
             <a class="main-nav-item" target="_blank" href="https://www.clothing.frontandcompany.ca">CLOTHING</a>
 
             <a class="main-nav-item" target="_blank" href="https://gifts.frontandcompany.ca/">GIFTS</a>
+
+            <a id="menu-icon" class="main-nav-item" href="#">
+                <img class="main-nav-icon" src="img/menu.svg" alt="Menu Icon">
+            </a>
         </nav>
 
         <div id="banner" class="flexbox">
@@ -41,8 +86,8 @@
                             <h1 class="landing-h1">COMPANY</h1>
 
                             <h2 class="landing-blurb">
-                                Morbi volutpat ante eget eros ornare <strong> consignment </strong> sollicitudin. Phasellus hendrerit fringilla sem id cursus. Quisque <strong>new clothing</strong> tincidunt fermentum risus ac porttitor. Aliquam vitae
-                                ligula turpis. Suspendisse in mi nisl. In felis eros, malesuada sed <strong>gifts &  home accessories</strong> at, eleifend nec nisl.
+                                Morbi volutpat ante eget eros ornare <a href="#" class="btn-text">consignment</a> sollicitudin. Phasellus hendrerit fringilla sem id cursus. Quisque <a href="#" class="btn-text">new clothing</a> tincidunt fermentum risus
+                                ac porttitor. Aliquam vitae ligula turpis. Suspendisse in mi nisl. In felis eros, malesuada sed <a href="#" class="btn-text">gifts &  home accessories</a> at, eleifend nec nisl.
                             </h2>
 
                             <div class="our-stores-secondary">
@@ -177,7 +222,7 @@
                 </div>
 
                 <div class="card-column">
-                    <h3>DEPARTMENT HOURS</h3>
+                    <h3>STORE HOURS</h3>
                     <div class="hours">
                         <h4>Monday - Wednesday</h4>
                         <h4>11:00AM - 5:30PM</h4>
@@ -192,12 +237,10 @@
                         <h4>Statutory Holidays</h4>
                         <h4>12:00PM - 6:30PM</h4>
                     </div>
-
                 </div>
 
                 <div class="card-column">
                     <div class="btn-wrapper">
-                        <button class="btn">BOOK AN APPOINTMENT</button>
                         <button class="btn">VISIT SITE</button>
                     </div>
                 </div>
@@ -208,18 +251,18 @@
     <footer>
         <div class="footer-container">
             <h2>Front & Company Ltd.</h2>
-            <a class="btn btn-secondary" href="contact.html">contact us</a>
         </div>
 
-        <div class="footer-container">
-            <div class="footer-container flex-start">
+        <div class="footer-container" id="footer-bottom">
+            <div class="footer-container">
                 <a class="btn-text" href="privacypolicy.html">Privacy Policy</a>
                 <a class="btn-text" href="ourstory.html">Our Story</a>
                 <a class="btn-text" href="#card-container">Contact</a>
             </div>
 
-            <div class="footer-container flex-end">
-                <a class="btn-text" href="mailto:shoponline@frontandcompany.ca">shoponline@frontandcompany.ca</a>
+            <div class="footer-container">
+                <a id="email-text" class="btn-text" href="mailto:shoponline@frontandcompany.ca">shoponline@frontandcompany.ca</a>
+                <a id="email-icon" href="mailto:shoponline@frontandcompany.ca"><img src="img/email.svg" alt="Email Icon"></a>
                 <a href="https://www.facebook.com/frontandcompany"><img src="img/facebook.svg" alt="Facebook Icon"></a>
                 <a href="https://www.instagram.com/frontandcompany"><img src="img/instagram.svg" alt="instagram Icon"></a>
             </div>
@@ -228,6 +271,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/toggleCards.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>
