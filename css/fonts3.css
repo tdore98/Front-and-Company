@@ -1,0 +1,34 @@
+h1,
+h2 {
+    /* font-family: 'Didact Gothic', sans-serif; */
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h3 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h4,
+button,
+a {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.our-stores-secondary .btn h3,
+.our-stores .btn h3 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
