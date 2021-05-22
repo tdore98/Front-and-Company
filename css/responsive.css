@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1140px) {
+    .info-container {
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 935px) {
+    .info-container h2 {
+        font-size: 4vw;
+    }
+    .header-container h2 {
+        font-size: 4vw;
+        overflow-x: hidden;
+    }
+    /* hoverBut.js uses this */
+    .col1of3-active {
+        flex: 50%;
+        width: 50%;
+    }
+    .col1of3-squish {
+        flex: 25%;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footer-bottom {
+        flex-direction: column;
+    }
+    .footer-container {
+        justify-content: flex-start;
+    }
+    .consignment-container,
+    .gifts-container {
+        animation: var(--animationDuration) ease-in-out 0s 1 leftRight forwards;
+    }
+    .clothing-container {
+        animation: var(--animationDuration) ease-in-out 0s 1 rightLeft forwards;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .col1of3 {
+        transition: height var(--transitionDuration);
+    }
+    .col1of3:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--black);
+    }
+    .col1of3-default {
+        width: 100%;
+        height: 33.3%;
+    }
+    .col1of3-active {
+        width: 100%;
+        /* height: 75%;
+        flex: 75%; */
+        height: auto;
+        flex: auto;
+    }
+    .col1of3-squish {
+        width: 100%;
+        height: 20%;
+        flex: 20%;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    footer {
+        padding: 1em 2em;
+    }
+}
+
+@keyframes leftRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

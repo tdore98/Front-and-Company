@@ -1,5 +1,6 @@
 function disableAnimation() {
     var element = document.getElementsByClassName("header-container");
+    var col = document.getElementsByClassName("col1of3");
 
     setTimeout(function() {
         for (let i = 0; i < element.length; i++) {

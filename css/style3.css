@@ -31,8 +31,8 @@
 }
 
 body {
-    background: #6d712e;
-    position: relative;
+    /* position: relative; */
+    background: #F6F2E4;
 }
 
 .flexbox {
@@ -40,44 +40,53 @@ body {
 }
 
 .col1of3 {
-    flex: 33.3%;
-    width: 33.3%;
     height: 100%;
     /* height: 100vh; */
-    transition: opacity 0.9s;
+    transition: opacity var(--transitionDuration);
+    transition: width var(--transitionDuration);
 }
 
 .col1of3:not(:last-child) {
-    border-right: 1px solid #454545;
+    border-right: 1px solid var(--black);
+}
+
+.col1of3-default {
+    flex: 33.3%;
+    width: 33.3%;
 }
 
 .landing {
     flex-direction: column;
     height: 100vh;
+    /*could be causing mobile resizing problem; height 100vh*/
     width: 100%;
-    position: sticky;
+    /* position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1; */
 }
 
 #main-nav {
+    background: #6d712e;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 1.5em;
-    width: 70%;
-    margin: 0 auto;
-    animation: fadeIn 0.9s ease-in-out 0.95s 1 forwards;
-    visibility: hidden;
+    width: 100%;
+    /* margin: 0 auto; */
+    opacity: 0;
+    animation: fadeIn var(--animationDuration) ease-in-out 0.95s 1 forwards;
 }
 
 .main-nav-item {
     text-transform: uppercase;
     cursor: pointer;
+    width: fit-content;
+    height: fit-content;
 }
 
 .main-nav-item img {
-    height: 75%;
+    height: 3em;
+    width: auto;
 }
 
 .main-nav-item:hover {
@@ -90,84 +99,65 @@ body {
 }
 
 .consignment-container {
-    background-color: #949860;
+    /* background-color: #949860; */
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* opacity: 0.9; */
-    transition: opacity 10ms;
     background-image: url(../img/Splotch-02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: 0.9s ease-in-out 0s 1 topDown forwards;
-    visibility: hidden;
+    animation: var(--animationDuration) ease-in-out 0s 1 topDown forwards;
 }
 
 .clothing-container {
-    background-color: #8C8556;
+    /* background-color: #8C8556; */
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* opacity: 0.9; */
-    transition: opacity 10ms;
     background-image: url(../img/Splotch-03.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: 0.9s ease-in-out 0s 1 bottomUp forwards;
-    visibility: hidden;
+    animation: var(--animationDuration) ease-in-out 0s 1 bottomUp forwards;
 }
 
 .gifts-container {
-    background-color: #CC7151;
+    /* background-color: #CC7151; */
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* opacity: 0.9; */
-    transition: opacity 10ms;
     background-image: url(../img/Splotch-04.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: 0.9s ease-in-out 0s 1 topDown forwards;
-    visibility: hidden;
+    animation: var(--animationDuration) ease-in-out 0s 1 topDown forwards;
 }
 
 @keyframes topDown {
-    from {
+    0% {
         transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
     }
-    to {
+    100% {
         transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
     }
 }
 
 @keyframes bottomUp {
-    from {
+    0% {
         transform: translateY(100%);
-        opacity: 0;
-        visibility: hidden;
     }
-    to {
+    100% {
         transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
     }
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
-        visibility: hidden;
     }
-    to {
+    100% {
         opacity: 1;
-        visibility: visible;
     }
 }
 
@@ -181,14 +171,16 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     opacity: 0;
-    /* animation: fadeIn 0.9s ease-in-out 1.9s 1 forwards; */
-    animation: fadeIn 0.9s ease-in-out 0.95s 1 forwards;
+}
+
+.animation-fadeIn {
+    animation: fadeIn var(--animationDuration) ease-in-out 0.95s 1 both;
 }
 
 .header-container h2 {
     font-size: 2vw;
     text-align: center;
-    color: #454545;
+    color: var(--black);
     text-transform: uppercase;
     padding: 1em 0;
 }
@@ -196,25 +188,25 @@ body {
 .consignment-container:hover,
 .clothing-container:hover,
 .gifts-container:hover {
-    opacity: 1;
     cursor: pointer;
 }
 
 .info-container {
     height: 100%;
-    /* margin: auto 0; */
     width: 100%;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     padding: 4em;
     background: rgba(255, 255, 255, 0.8);
-    visibility: hidden;
+    display: none;
 }
 
 .info-container h2 {
     padding-bottom: 0.5em;
     font-size: 2vw;
     text-transform: uppercase;
+    font-weight: 600;
+    transform: font-size var(--transitionDuration);
 }
 
 .telephone p,
@@ -245,7 +237,7 @@ body {
     padding: 0.5em 1.75em;
     text-decoration: none;
     color: white;
-    background: #454545;
+    background: var(--black);
     max-width: 10em;
     text-transform: uppercase;
     text-align: center;
@@ -262,7 +254,7 @@ body {
 
 .btn-text {
     text-decoration: none;
-    color: #ccc;
+    color: black;
 }
 
 .btn-text:hover {
@@ -270,14 +262,14 @@ body {
 }
 
 footer {
-    border-top: solid 1px var(--green);
+    /* border-top: solid 1px var(--green); */
     margin: 0;
     padding: 2em 4em;
     display: flex;
     flex-direction: column;
-    transition: bottom 0.3s;
-    position: relative;
-    z-index: 2;
+    transition: bottom var(--transitionDuration);
+    /* position: relative;
+    z-index: 2; */
     background: #6d712e;
 }
 
@@ -299,24 +291,11 @@ footer {
 
 .footer-container h2 {
     padding-top: calc(0.75em / 2);
-    color: #ccc;
+    color: black;
     font-size: 2em;
 }
 
 .pauseAnimation {
     animation-play-state: paused;
-    /* opacity: 1; */
-    transition: opacity 0.9s;
-}
-
-.opacity-9 {
-    opacity: 0.9;
-}
-
-.opacity-6 {
-    opacity: 0.6;
-}
-
-.opacity-0 {
-    opacity: 0;
+    transition: opacity var(--transitionDuration);
 }

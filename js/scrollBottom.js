@@ -8,13 +8,14 @@ window.addEventListener("scroll", function() { // or window.addEventListener("sc
     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
     if (st > lastScrollTop) {
         for (i = 0; i < header.length; i++) {
+            header[i].classList.remove("animation-fadeIn");
             header[i].style.opacity = 0;
-            console.log("opacity drop: " + i);
+            // console.log("opacity drop: " + i);
         }
     } else {
         for (i = 0; i < header.length; i++) {
             header[i].style.opacity = 0.9;
-            console.log("opacity return");
+            // console.log("opacity return");
         }
     }
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
